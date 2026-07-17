@@ -1,347 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Wei-Shan Su <span class="zh" lang="zh-TW">蘇唯善</span></title>
-    <meta name="description" content="Personal academic website of Wei-Shan Su">
-
-    <style>
-        body {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 16px;
-            font-family: "Latin Modern Roman", "Times New Roman", Times, serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #111;
-            background: #fff;
-        }
-        
-        .zh {
-            font-family: "BiauKai", "DFKai-SB", "標楷體", serif;
-        }
-        
-        a {
-            color: #0000cc;
-        }
-
-        a:visited {
-            color: #551a8b;
-        }
-
-        h1, h2 {
-            margin-bottom: 0.3em;
-        }
-
-        h2 {
-            margin-top: 1.6em;
-            border-bottom: 1px solid #aaa;
-        }
-
-        nav {
-            margin: 12px 0 20px;
-        }
-
-        nav a {
-            margin-right: 12px;
-        }
-
-        ul, ol {
-            padding-left: 22px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .date {
-                display: inline-block;
-                min-width: 110px;
-                font-family: "Latin Modern Roman", "Times New Roman", Times, serif;
-            }
-
-        footer {
-            margin-top: 40px;
-            padding-top: 10px;
-            border-top: 1px solid #aaa;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            nav a {
-                display: inline-block;
-                margin-bottom: 6px;
-            }
-
-            .date {
-                display: block;
-                min-width: 0;
-            }
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home — Wei-Shan Su</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Wei-Shan Su <span class="zh" lang="zh-TW">蘇唯善</span></h1>
-
+<div class="page">
+    <aside class="sidebar">
+        <h1><a href="index.html">Wei-Shan Su<br><span class="zh-name">蘇唯善</span></a></h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#news">News</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#software">Software</a>
-            <a href="#talks">Talks</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="current">Home</a>
+            <a href="research.html">Research</a>
+            <a href="software.html">Software</a>
+            <a href="publications.html">Publications</a>
+            <a href="presentations.html">Presentations</a>
+            <a href="cv.html">Curriculum Vitae</a>
         </nav>
-    </header>
-
+        <hr>
+        <nav>
+            <a href="https://github.com/weishansu011017">GitHub</a>
+            <a href="https://orcid.org/0009-0003-0379-8724">ORCID</a>
+        </nav>
+    </aside>
     <main>
-        <section id="about">
-            <p>
-                I do research.<br>
-                Sometimes I write code.
-            </p>
+        <h1>Home</h1>
+        <hr>
+        <img class="profile-photo"
+             src="assets/images/profile.jpg"
+             alt="Photograph of Wei-Shan Su"
+             width="170">
 
-            <p>
-                Graduate Institute of Astrophysics,<br>
-                National Taiwan University
-            </p>
+        <p><strong>Computational Astrophysics, Particle Methods, and Scientific Computing.</strong></p>
 
-            <p>
-                Institute of Astronomy and Astrophysics,<br>
-                Academia Sinica
-            </p>
+        <p class="tagline">
+            <em>I do research.</em>
+        </p>
 
-            <p>
-                <a href="https://github.com/weishansu011017"
-                   target="_blank"
-                   rel="noopener noreferrer">GitHub</a> |
-                <a href="https://orcid.org/0009-0003-0379-8724"
-                   target="_blank"
-                   rel="noopener noreferrer">ORCID</a> |
-                <a href="https://ui.adsabs.harvard.edu/search/?q=author%3A%22Su%2C%20Wei-Shan%22"
-                   target="_blank"
-                   rel="noopener noreferrer">NASA ADS</a>
-            </p>
-        </section>
+        <p>
+            I am an MS student at the Graduate Institute of Astrophysics,
+            National Taiwan University, and a student research assistant at ASIAA.
+        </p>
 
-        <section id="news">
-            <h2>News</h2>
+        <h2>Research interests</h2>
+        <ul>
+            <li>Gas and dust dynamics</li>
+            <li>Protoplanetary discs and streaming instability</li>
+            <li>Smoothed Particle Hydrodynamics</li>
+            <li>GPU algorithms for particle data</li>
+        </ul>
 
-            <p>No recent updates.</p>
-        </section>
-
-        <section id="research">
-            <h2>Research</h2>
-
-            <h3>Numerical astrophysics</h3>
-
-            <p>
-                Hydrodynamic simulations of circumstellar discs, galactic
-                discs, stellar feedback, and dust–gas interactions.
-            </p>
-
-            <h3>Particle methods</h3>
-
-            <p>
-                Smoothed particle hydrodynamics, spatial interpolation,
-                neighbour searches, and linear bounding volume hierarchies.
-            </p>
-
-            <h3>GPU computing</h3>
-
-            <p>
-                CUDA and Metal implementations of particle algorithms,
-                eigensolvers, and streaming instability growth rate calculations.
-            </p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-
-            <ol>
-                <li>
-                    <strong>Wei-Shan Su</strong>,
-                    Jeremy L. Smallwood,
-                    Min-Kai Lin,
-                    Chao-Chin Yang,
-                    and Nicolás Cuello,
-                    “Evolution of dust in a protoplanetary disc driven by
-                    stellar flybys: implications for the streaming
-                    instability,”
-                    <em>Monthly Notices of the Royal Astronomical Society</em>,
-                    547, stag173, 2026.
-                    <a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag173S/abstract"
-                       target="_blank"
-                       rel="noopener noreferrer">ADS</a>
-                    |
-                    <a href="https://doi.org/10.1093/mnras/stag173"
-                       target="_blank"
-                       rel="noopener noreferrer">DOI</a>
-                    |
-                    <a href="https://arxiv.org/abs/2601.17278"
-                       target="_blank"
-                       rel="noopener noreferrer">arXiv</a>
-                </li>
-            </ol>
-        </section>
-
-        <section id="software">
-            <h2>Software</h2>
-        
-            <p>
-                I develop and maintain open-source software under
-                <a href="https://github.com/AstroPostprocess"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <strong>AstroPostprocess</strong>
-                </a>,
-                a GitHub organisation for numerical astrophysics,
-                particle methods, data analysis, and GPU computing.
-            </p>
-        
-            <ul>
-                <li>
-                    <a href="https://github.com/AstroPostprocess/Partia.jl"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <strong>Partia.jl</strong>
-                    </a>
-                    — CPU and GPU algorithms for particle neighbour searches,
-                    linear bounding volume hierarchy construction and traversal,
-                    and SPH interpolation.
-                </li>
-        
-                <li>
-                    <a href="https://github.com/AstroPostprocess/TinyEigvals.jl"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <strong>TinyEigvals.jl</strong>
-                    </a>
-                    — A GPU batch eigensolver for small fixed-size
-                    non-Hermitian matrices.
-                </li>
-        
-                <li>
-                    <a href="https://github.com/AstroPostprocess/StreamingInstability.jl"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <strong>StreamingInstability.jl</strong>
-                    </a>
-                    — Tools for calculating and analysing streaming instability
-                    growth rates.
-                </li>
-            </ul>
-        </section>
-
-        <section id="talks">
-            <h2>Talks and Presentations</h2>
-
-            <ul>
-                <li>
-                    <span class="date">2026-05</span>
-                    <strong>Oral Presentation</strong>,
-                    ASROC Annual Meeting, Hsinchu, Taiwan.<br>
-                    <em>
-                        Evolution of dust in a protoplanetary disc driven by
-                        stellar flybys: implications for the streaming
-                        instability
-                    </em>
-                    — Best Oral Award.
-                </li>
-
-                <li>
-                    <span class="date">2026-05</span>
-                    <strong>Poster Presentation</strong>,
-                    ASROC Annual Meeting, Hsinchu, Taiwan.<br>
-                    <em>
-                        Dust survival against sputtering in feedback-driven
-                        galactic outflows
-                    </em>
-                </li>
-
-                <li>
-                    <span class="date">2026-01</span>
-                    <strong>Poster Presentation</strong>,
-                    Annual Meeting of the Physical Society of Taiwan,
-                    Chiayi, Taiwan.<br>
-                    <em>
-                        Dust survival against sputtering in feedback-driven
-                        galactic outflows
-                    </em>
-                </li>
-
-                <li>
-                    <span class="date">2025-12</span>
-                    <strong>Poster Presentation</strong>,
-                    International Conference on Exoplanets and Planet
-                    Formation, Shanghai, China.<br>
-                    <em>
-                        Evolution of dust in a protoplanetary disc driven by
-                        stellar flybys: implications for the streaming
-                        instability
-                    </em>
-                </li>
-
-                <li>
-                    <span class="date">2024-09</span>
-                    <strong>Invited Seminar Talk</strong>,
-                    NCTS Astrophysics Lunch Seminar, Taipei, Taiwan.<br>
-                    <em>
-                        Analyzing spiral structures in flyby-encountered
-                        protoplanetary disks: implications for planet formation
-                    </em>
-                </li>
-
-                <li>
-                    <span class="date">2024-05</span>
-                    <strong>Poster Presentation</strong>,
-                    ASROC Annual Meeting, Changhua, Taiwan.<br>
-                    <em>
-                        Analyzing spiral structures in flyby-encountered
-                        protoplanetary disks: implications for planet formation
-                    </em>
-                    — Best Poster Award.
-                </li>
-
-                <li>
-                    <span class="date">2024-05</span>
-                    <strong>Poster Presentation</strong>,
-                    ASROC Annual Meeting, Changhua, Taiwan.<br>
-                    <em>
-                        Further X-ray timing investigations on the 2-hour
-                        periodicity of PSR J1311-3430
-                    </em>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-
-            <p>
-                Email:
-                <a href="mailto:wssu@asiaa.sinica.edu.tw">
-                    wssu@asiaa.sinica.edu.tw
-                </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/weishansu011017"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    github.com/weishansu011017
-                </a>
-            </p>
-        </section>
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:wssu@asiaa.sinica.edu.tw">wssu@asiaa.sinica.edu.tw</a><br>
+            <a href="https://github.com/weishansu011017">github.com/weishansu011017</a>
+        </p>
+        <div class="footer">Last updated: 17 July 2026</div>
     </main>
-
-    <footer>
-        <p>Last updated: 17 July 2026</p>
-    </footer>
+</div>
 </body>
 </html>

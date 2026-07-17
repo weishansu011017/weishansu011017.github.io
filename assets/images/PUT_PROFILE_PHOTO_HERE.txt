@@ -1,0 +1,2 @@
+Put your photograph in this folder and name it profile.jpg.
+Recommended: portrait or nearly square JPEG, at least 600 px wide.
